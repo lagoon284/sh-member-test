@@ -60,5 +60,20 @@ public class Member {
 	//사용자 소개
 	@Column(length = 1000)
 	private String introduce;
+
+	public void change(String pass, String nickname, String image, String name, int age, String address,
+			String phone, String introduce) {
+		
+		this.pass  = pass;
+		this.nickname = nickname;
+		this.image = image;
+		this.name = name;
+		this.age = age;
+		this.address = address;
+		this.phone = phone;
+		this.introduce = introduce;
+	}
+	
+	
 	
 }
