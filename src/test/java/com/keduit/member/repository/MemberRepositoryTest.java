@@ -20,11 +20,11 @@ public class MemberRepositoryTest {
 		
 		IntStream.rangeClosed(1, 10).forEach(i -> {
 			
-			boolean xy = false;
+			boolean xy = false;	// i = 2의 배수일 때 남자.
 			
 			if(i % 2 == 0) {
 				xy = true;
-			}
+			}					// 여기까지 남자.
 			
 			Member member = Member.builder().id("userID" + i)
 											.pass("1111")
