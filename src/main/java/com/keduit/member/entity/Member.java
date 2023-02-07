@@ -57,7 +57,7 @@ public class Member {
 	//사용자 권한(회원 / 관리자)
 	private Boolean grade;
 	
-	//사용자 전화번호
+	//사용자 소개
 	@Column(length = 1000)
 	private String introduce;
 	
