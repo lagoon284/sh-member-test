@@ -38,7 +38,7 @@ public class Member {
 	
 	//사용자 이름
 	@Column(length = 20)
-	private String name;
+	private String name; 
 	
 	//사용자 나이
 	private int age;
