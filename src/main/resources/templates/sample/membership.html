@@ -18,12 +18,7 @@
   
   <p>회원가입에 필요한 정보를 입력하여 주세요.</p>
   
-<<<<<<< HEAD
   <form th:action="@{/sample/main}" th:method="post">
-		
-=======
-  <form method="post">
->>>>>>> origin/master
     <table>
 	  <tr>
 		<td>
@@ -40,13 +35,13 @@
 	  <tr>
 		<td>
 			<label>비밀번호</label>
-			<input type="password" name="pw" placeholder="비밀번호를 입력해주세요.">
+			<input type="password" name="pass" placeholder="비밀번호를 입력해주세요.">
 		</td>
 	  </tr>
 	  <tr>
 		<td>
 		  <label>비밀번호 확인</label>
-		  <input type="password" name="checkPw" placeholder="비밀번호를 입력해주세요.">
+		  <input type="password" name="passcheck" placeholder="비밀번호를 입력해주세요.">
 		</td>
 	  </tr>
 	  <tr>
@@ -57,7 +52,7 @@
 	  <tr>
 		<td>
 		  <label>별명</label>
-		  <input type="text" name="nickName" placeholder="별명를 입력해주세요.">
+		  <input type="text" name="nickname" placeholder="별명를 입력해주세요.">
 		</td>
 	  </tr>
 	  <tr>
@@ -95,26 +90,14 @@
 	  </tr>
 	</table> 
 	  
-<<<<<<< HEAD
-	  <button type="submit" name="joinMember" class="registerBtn">회원가입</button>
-=======
-	<button type="submit" name="register">회원가입</button>
->>>>>>> origin/master
+	<button type="submit" name="joinMember" class="registerBtn">회원가입</button>
 	  
 	<p>이메일 수신 동의 - api 넣을건가요???</p>
 	  
-<<<<<<< HEAD
-	  <div>
-	    이미 회원이신가요?<a href="#">로그인</a>
-	  </div>
-	  
 	</form>	
 	
-=======
 	<div>
 	  이미 회원이신가요?<a href="#">로그인</a>
 	</div>
-  </form>
->>>>>>> origin/master
 </body>
 </html>
