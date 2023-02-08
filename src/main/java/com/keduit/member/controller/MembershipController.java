@@ -24,9 +24,9 @@ public class MembershipController {
 //	public String index() {
 //		return "redirect:/sample/membership";
 //	}
-	// main 화면으로 넘어가려면 GetMapping도 만들어줘야 함
-	@GetMapping("/main")
-	public void main() {
+	// login 화면으로 넘어가려면 GetMapping도 만들어줘야 함
+	@GetMapping("/login")
+	public void login() {
 		
 	}
 	
@@ -35,15 +35,15 @@ public class MembershipController {
 		
 	}
 	
-	// 회원가입 후 main 화면으로 넘어갈거야
-	@PostMapping("/main")
+	// 회원가입 후 login 화면으로 넘어갈거야
+	@PostMapping("/login")
 	public String register(MemberDTO memberDTO) {
 		
 		log.info("memberDTO : " + memberDTO);
 		
-//		String id = memberService.register(memberDTO);
+		String id = memberService.register(memberDTO);
 		
-		return "redirect:/sample/main";
+		return "redirect:/sample/login";
 		
 	}
 	
